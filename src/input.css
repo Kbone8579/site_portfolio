@@ -190,6 +190,17 @@ span {
   left: 50%;
   transform: translateX(-50%);
 }
+#portfolio .page.p1 .svg-box.s1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#portfolio .page.p1 .svg-box.s1 svg {
+  position: absolute;
+  bottom: -8px;
+  left: -570px;
+}
 #portfolio .page.p1 .top-box {
   display: flex;
   justify-content: space-between;
@@ -220,12 +231,13 @@ span {
 /* page p2 */
 #portfolio .page.p2 {
   width: 100%;
-  height: 1150px;
+  height: 1140px;
   background-image: url(image/img-1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  z-index: 100;
 }
 #portfolio .page.p2 .all-box {
   width: 1703px;
@@ -236,6 +248,17 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#portfolio .page.p2 .svg-box.s2 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#portfolio .page.p2 .svg-box.s2 svg {
+  position: absolute;
+  bottom: -5px;
+  right: 8px;
 }
 #portfolio .page.p2 .all-box .top-box {
   width: 100%;
@@ -266,7 +289,18 @@ span {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 126px;
+  margin-top: 60px;
+}
+#portfolio .page.p3 .svg-box.s3 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#portfolio .page.p3 .svg-box.s3 svg {
+  position: absolute;
+  top: -16px;
+  left: -200px;
 }
 #portfolio .page.p3 .all-box .title-box {
   margin-bottom: 175px;
@@ -365,6 +399,17 @@ span {
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
+}
+#portfolio .page.p4 .svg-box.s4 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#portfolio .page.p4 .svg-box.s4 svg {
+  position: absolute;
+  top: 517px;
+  right: 200px;
 }
 #portfolio .page.p4 .all-box .contents-box {
   width: 920px;
