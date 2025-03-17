@@ -82,12 +82,12 @@ function typing(){
            $(".typing>ul>li").removeClass("on")
           },100);
         } else{
-          //첫번째 단어가 써지면 1초쉰다.
+          //첫번째 단어가 써지면 5초쉰다.
           
           clearInterval(tyInt);
            setTimeout(function(){
-             tyInt = setInterval(typing,100);
-           },100);
+             tyInt = setInterval(typing,200);
+           },800);
        }
      }
    } else{ 
@@ -108,10 +108,10 @@ function typing(){
            typingBool1=true;
          }
          
-         //1초후 다음분장 타이핑 
+         //1초후 다음문장 타이핑 
          clearInterval(tyInt);
          setTimeout(function(){
-           tyInt = setInterval(typing,100);
+           tyInt = setInterval(typing,200);
          },100);
        }
      }else{

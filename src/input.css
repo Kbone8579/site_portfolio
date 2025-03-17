@@ -32,7 +32,7 @@ span {
 /* font */
 /* page p1 font */
 #portfolio .page.p1 .typing-txt1, .typing-txt2{display: none;}
-#portfolio .page.p1 .typing ul li {
+#portfolio .page.p1 .typing ul li, p1 {
   font-family: "Pretendard Variable", sans-serif;
   font-size: 64px;
   font-weight: 300;
@@ -40,18 +40,20 @@ span {
   letter-spacing: 0.02em;
   line-height: 1.2;
 }
-/* #portfolio .page.p1 .typing ul li p1 {
-  font-family: "Pretendard Variable", sans-serif;
-  font-size: 66px;
-  font-weight: 500;
-  color: #47423e;
-  letter-spacing: 0.02em;
-} */
+#portfolio .page.p1 .typing ul li:nth-child(3) {
+  margin-top: 18px;
+}
 #portfolio .page.p1 .typing ul li.on {  
   display: inline; 
   animation-name: cursor; 
   animation-duration: 0.3s; 
   animation-iteration-count: infinite; 
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  color: #47423e;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
 } 
 #portfolio .page.p1 .typing ul{list-style: none;}
 @keyframes cursor{ 
