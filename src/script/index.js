@@ -1,13 +1,19 @@
 $(document).ready(function() {
+    const content0 = document.querySelector('.page.p1')
     const content1 = document.querySelector('.page.p2')
     const content2 = document.querySelector('.page.p3')
     const content3 = document.querySelector('.page.p4')
+    const path0 = document.querySelector('.path1')
     const path1 = document.querySelector('.path2')
     const path2 = document.querySelector('.path3')
     const path3 = document.querySelector('.path4')
+    const path0Length = path0.getTotalLength()
     const path1Length = path1.getTotalLength()
     const path2Length = path2.getTotalLength()
     const path3Length = path3.getTotalLength()
+    path0.style.strokeDasharray  = path0Length
+    path0.style.strokeDashoffset = calcDashoffset(window.innerHeight * 0.8, content1, path1Length)
+
     path1.style.strokeDasharray  = path1Length
     path1.style.strokeDashoffset = calcDashoffset(window.innerHeight * 0.8, content1, path1Length)
     
@@ -26,6 +32,7 @@ $(document).ready(function() {
     function scrollHandler() {
       const scrollY1 = window.scrollY + (window.innerHeight * 0.8)
       const scrollY2 = window.scrollY + (window.innerHeight * 1.0)
+      path0.style.strokeDashoffset = calcDashoffset(scrollY1, content0, path0Length)
       path1.style.strokeDashoffset = calcDashoffset(scrollY1, content1, path1Length)
       path2.style.strokeDashoffset = calcDashoffset(scrollY1, content2, path2Length)
       path3.style.strokeDashoffset = calcDashoffset(scrollY2, content3, path3Length)

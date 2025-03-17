@@ -1803,6 +1803,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Serif+KR:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prata&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@keyframes drawPath1 {
+  0% {
+    stroke-dashoffset: 6884;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes floating {
+  50% {
+    transform: translate3d(0, 40px, 0);
+  }
+}
 span {
   display: block;
 }
@@ -1977,6 +1990,11 @@ span {
   box-sizing: border-box;
   overflow: hidden;
   background-color: #fff;
+  stroke-dasharray: 6884;
+}
+.path1 {
+  stroke-dasharray: 6884;
+  animation: drawPath1 1s linear;
 }
 #portfolio .page.p1 .all-box {
   width: 1703px;
