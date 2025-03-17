@@ -337,6 +337,9 @@
       max-width: 96rem !important;
     }
   }
+  .mt-\[18px\] {
+    margin-top: 18px;
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -1834,9 +1837,6 @@ span {
   color: #47423e;
   letter-spacing: 0.02em;
   line-height: 1.2;
-}
-#portfolio .page.p1 .typing ul li:nth-child(2) {
-  margin-top: 18px;
 }
 #portfolio .page.p1 .typing ul li.on {
   display: inline;

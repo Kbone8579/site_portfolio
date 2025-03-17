@@ -40,9 +40,6 @@ span {
   letter-spacing: 0.02em;
   line-height: 1.2;
 }
-#portfolio .page.p1 .typing ul li:nth-child(3) {
-  margin-top: 18px;
-}
 #portfolio .page.p1 .typing ul li.on {  
   display: inline; 
   animation-name: cursor; 
