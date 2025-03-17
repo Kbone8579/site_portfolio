@@ -15,7 +15,7 @@ $(document).ready(function() {
     path2.style.strokeDashoffset = path2Length
     
     path3.style.strokeDasharray  = path3Length
-    path3.style.strokeDashoffset = path3Length
+    path3.style.strokeDashoffset = calcDashoffset(window.innerHeight * 1.0, content3, path3Length)
     
     function calcDashoffset(scrollY, element, length) {
       const ratio = (scrollY - element.offsetTop) / element.offsetHeight
@@ -24,10 +24,11 @@ $(document).ready(function() {
     }
     
     function scrollHandler() {
-      const scrollY = window.scrollY + (window.innerHeight * 0.8)
-      path1.style.strokeDashoffset = calcDashoffset(scrollY, content1, path1Length)
-      path2.style.strokeDashoffset = calcDashoffset(scrollY, content2, path2Length)
-      path3.style.strokeDashoffset = calcDashoffset(scrollY, content3, path3Length)
+      const scrollY1 = window.scrollY + (window.innerHeight * 0.8)
+      const scrollY2 = window.scrollY + (window.innerHeight * 1.0)
+      path1.style.strokeDashoffset = calcDashoffset(scrollY1, content1, path1Length)
+      path2.style.strokeDashoffset = calcDashoffset(scrollY1, content2, path2Length)
+      path3.style.strokeDashoffset = calcDashoffset(scrollY2, content3, path3Length)
     }
     
     window.addEventListener('scroll', scrollHandler)

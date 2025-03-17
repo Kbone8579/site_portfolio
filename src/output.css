@@ -1978,12 +1978,6 @@ span {
   overflow: hidden;
   background-color: #fff;
 }
-#portfolio .page.p2 {
-  background-color: yellow;
-}
-#portfolio .page.p3 {
-  background-color: white;
-}
 #portfolio .page.p1 .all-box {
   width: 1703px;
   position: absolute;
@@ -2028,6 +2022,10 @@ span {
   flex-direction: column;
   align-items: end;
 }
+#portfolio .page.p2 {
+  background-color: yellow;
+  position: relative;
+}
 #portfolio .page.p2 .all-box {
   width: 1703px;
   position: absolute;
@@ -2054,6 +2052,10 @@ span {
   display: flex;
   flex-direction: column;
   gap: 49px;
+}
+#portfolio .page.p3 {
+  background-color: white;
+  position: relative;
 }
 #portfolio .page.p3 > .all-box {
   width: 1703px;
@@ -2152,6 +2154,10 @@ span {
 #portfolio .page.p3 .all-box .main-box .text-box .box .part.s5 {
   gap: 111px;
 }
+#portfolio .page.p4 {
+  background-color: khaki;
+  position: relative;
+}
 #portfolio .page.p4 .all-box {
   width: 1703px;
   position: absolute;
@@ -2160,17 +2166,6 @@ span {
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
-}
-#portfolio .page.p4 .svg-box.s4 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-#portfolio .page.p4 .svg-box.s4 svg {
-  position: absolute;
-  top: 517px;
-  right: 200px;
 }
 #portfolio .page.p4 .all-box .contents-box {
   width: 920px;

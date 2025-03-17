@@ -183,22 +183,10 @@ span {
 }
 /* css */
 /* page p1 */
-/* #portfolio .page.p1 {
-  background-color: #f0efea;
-  width: 100%;
-  height: 1280px;
-  position: relative;
-} */
 #portfolio .page.p1 {
   box-sizing: border-box;
   overflow: hidden;
   background-color: #fff;
-}
-#portfolio .page.p2 {
-  background-color: yellow;
-}
-#portfolio .page.p3 {
-  background-color: white;
 }
 #portfolio .page.p1 .all-box {
   width: 1703px;
@@ -247,14 +235,8 @@ span {
 
 /* page p2 */
 #portfolio .page.p2 {
-  /* width: 100%;
-  height: 1140px;
-  background-image: url(image/img-1.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: yellow;
   position: relative;
-  z-index: 100; */
 }
 #portfolio .page.p2 .all-box {
   width: 1703px;
@@ -284,12 +266,10 @@ span {
   gap: 49px;
 }
 /* page p3 */
-/* #portfolio .page.p3 {
-  width: 100%;
-  height: 1330px;
-  background-color: #f0efea;
+#portfolio .page.p3 {
+  background-color: white;
   position: relative;
-} */
+}
 #portfolio .page.p3 > .all-box {
   width: 1703px;
   position: absolute;
@@ -388,15 +368,10 @@ span {
   gap: 111px;
 }
 /* page p4 */
-/* #portfolio .page.p4 {
-  width: 100%;
-  height: 1080px;
-  background-image: url(image/img-2.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+#portfolio .page.p4 {
+  background-color: khaki;
   position: relative;
-} */
+}
 #portfolio .page.p4 .all-box {
   width: 1703px;
   position: absolute;
@@ -405,17 +380,6 @@ span {
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
-}
-#portfolio .page.p4 .svg-box.s4 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-#portfolio .page.p4 .svg-box.s4 svg {
-  position: absolute;
-  top: 517px;
-  right: 200px;
 }
 #portfolio .page.p4 .all-box .contents-box {
   width: 920px;
