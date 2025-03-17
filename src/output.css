@@ -1805,7 +1805,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @keyframes drawPath1 {
   0% {
-    stroke-dashoffset: 6884;
+    stroke-dashoffset: 3000;
   }
   100% {
     stroke-dashoffset: 0;
@@ -1832,7 +1832,7 @@ span {
   letter-spacing: -0.04em;
   opacity: 0.6;
 }
-.page.p1 .title-box h2 {
+.page.p1 .title-box .l2 {
   font-family: "Pretendard Variable", sans-serif;
   font-size: 64px;
   font-weight: 300;
@@ -1986,14 +1986,17 @@ span {
   letter-spacing: -0.03em;
   margin-top: 7px;
 }
+.path {
+  fill: none;
+  stroke: #484848;
+}
 #portfolio .page.p1 {
   box-sizing: border-box;
   overflow: hidden;
-  background-color: #fff;
-  stroke-dasharray: 6884;
+  background-color: #F0EFEA;
 }
 .path1 {
-  stroke-dasharray: 6884;
+  stroke-dasharray: 1;
   animation: drawPath1 1s linear;
 }
 #portfolio .page.p1 .all-box {
@@ -2041,7 +2044,10 @@ span {
   align-items: end;
 }
 #portfolio .page.p2 {
-  background-color: yellow;
+  background-image: url(image/img-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 #portfolio .page.p2 .all-box {
@@ -2072,7 +2078,7 @@ span {
   gap: 49px;
 }
 #portfolio .page.p3 {
-  background-color: white;
+  background-color: #F0EFEA;
   position: relative;
 }
 #portfolio .page.p3 > .all-box {
@@ -2095,6 +2101,33 @@ span {
 }
 #portfolio .page.p3 .all-box .title-box {
   margin-bottom: 175px;
+}
+#portfolio .typing-txt1, .typing-txt2 {
+  display: none;
+}
+#portfolio .typing ul li {
+  font-size: 18px;
+  line-height: 1;
+}
+#portfolio .typing ul li.on {
+  display: inline;
+  animation-name: cursor;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+#portfolio .typing ul {
+  list-style: none;
+}
+@keyframes cursor {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
 }
 #portfolio .page.p3 .all-box .main-box {
   display: flex;
@@ -2173,7 +2206,10 @@ span {
   gap: 111px;
 }
 #portfolio .page.p4 {
-  background-color: khaki;
+  background-image: url(image/img-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 #portfolio .page.p4 .all-box {
