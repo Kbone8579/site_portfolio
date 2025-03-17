@@ -185,7 +185,8 @@ span {
   font-family: "Pretendard Variable", sans-serif;
   font-size: 26px;
   font-weight: 600;
-  color: #222;
+  color: #47423e;
+  opacity: 70%;
   line-height: 1.1;
   margin-bottom: 12px;
 }
