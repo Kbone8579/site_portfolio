@@ -2056,7 +2056,7 @@ span {
   display: flex;
   gap: 30px;
 }
-#portfolio .page.p1 .top-box .button1:hover, #portfolio .page.p1 .top-box .button2:hover {
+#portfolio .page.p1 .top-box .button1:hover, #portfolio .page.p1 .top-box .button2:hover, #portfolio .page.p1 .top-box .button3:hover {
   opacity: 90%;
   transition: all 0.2s;
 }
@@ -2257,6 +2257,60 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 435px;
+}
+#portfolio .contents-navigation {
+  width: 96px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  position: fixed;
+  bottom: 74px;
+  right: 0;
+}
+#portfolio .controller {
+  width: 100%;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #A5A5A5;
+  opacity: 40%;
+  border-radius: 30px 0 0 30px;
+}
+#portfolio .controller .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+#portfolio .controller .box span:nth-child(1) {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #D9C7A9;
+  border-radius: 50%;
+}
+#portfolio .remote-control {
+  width: 68px;
+  height: 68px;
+  background-color: #AE8970;
+  opacity: 60%;
+  border-radius: 100%;
+}
+#portfolio .top-btn {
+  width: 68px;
+  height: 68px;
+  background-color: #AE8970;
+  opacity: 60%;
+  border-radius: 100%;
 }
 @property --tw-translate-x {
   syntax: "*";

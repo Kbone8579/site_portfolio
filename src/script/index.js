@@ -1,6 +1,7 @@
 // 페이지이동(portfolio, contents)
 $(document).ready(function(){
-  document
+    // 탑바 버튼튼
+    document
     .querySelector(".button1")
     .addEventListener("click", (e) => {
       document.querySelector(".page.p4").scrollIntoView({ behavior: "smooth" });
@@ -10,8 +11,31 @@ $(document).ready(function(){
     .addEventListener("click", (e) => {
       document.querySelector(".page.p3").scrollIntoView({ behavior: "smooth" });
     });
+    document
+    .querySelector(".button3")
+    .addEventListener("click", (e) => {
+      document.querySelector(".page.p2").scrollIntoView({ behavior: "smooth" });
+    });
+
+    // controller
+    document
+    .querySelector(".box.b1")
+    .addEventListener("click", (e) => {
+      document.querySelector(".page.p2").scrollIntoView({ behavior: "smooth" });
+    });
+    document
+    .querySelector(".box.b2")
+    .addEventListener("click", (e) => {
+      document.querySelector(".page.p3").scrollIntoView({ behavior: "smooth" });
+    });
+    document
+    .querySelector(".box.b3")
+    .addEventListener("click", (e) => {
+      document.querySelector(".page.p4").scrollIntoView({ behavior: "smooth" });
+    });
 });
 
+// svg 애니매이션션
 $(document).ready(function () {
   const content0 = document.querySelector(".page.p1");
   const content1 = document.querySelector(".page.p2");
@@ -211,4 +235,48 @@ $(document).ready(function(){
   });
 });
 
+// 탑버튼
+$(document).ready(function(){
+  $(".contents-navigation").hide();
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 500){$(".contents-navigation").fadeIn();}
+    else{$(".contents-navigation").fadeOut();}
+  });
 
+  $('.top-btn').click(function(){
+    $('html, body').animate({scrollTop : 0}, 800);
+      return false;
+  });
+});
+
+// remote-control 스크립트트
+// JavaScript for animating the controller
+document.addEventListener('DOMContentLoaded', function() {
+  const remoteControl = document.querySelector('.remote-control');
+  const controller = document.querySelector('.controller');
+  
+  // Initially hide the controller off-screen
+  controller.style.transform = 'translateX(100%)';
+  controller.style.transition = 'transform 0.5s ease-in-out';
+  controller.style.visibility = 'hidden';
+  
+  let isControllerVisible = false;
+  
+  remoteControl.addEventListener('click', function() {
+    if (!isControllerVisible) {
+      // Show controller
+      controller.style.visibility = 'visible';
+      setTimeout(() => {
+        controller.style.transform = 'translateX(0)';
+      }, 10); // Small delay to ensure visibility is applied first
+    } else {
+      // Hide controller
+      controller.style.transform = 'translateX(100%)';
+      setTimeout(() => {
+        controller.style.visibility = 'hidden';
+      }, 500); // Wait for the animation to complete
+    }
+    
+    isControllerVisible = !isControllerVisible;
+  });
+});
