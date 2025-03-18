@@ -222,7 +222,7 @@ span {
   overflow: hidden;
   background-color: #F0EFEA;
 }
-.path1 {
+#portfolio .path1 {
   stroke-dasharray: 1;
   animation: drawPath1 1s linear;
 }
@@ -252,6 +252,11 @@ span {
 #portfolio .page.p1 .top-box .box1 {
   display: flex;
   gap: 30px;
+}
+#portfolio .page.p1 .top-box .button1:hover,
+#portfolio .page.p1 .top-box .button2:hover {
+  opacity: 90%;
+  transition: all 0.2s;
 }
 #portfolio .page.p1 .title-box li:nth-child(2) {
   margin-bottom: 18px;

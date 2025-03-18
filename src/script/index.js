@@ -1,3 +1,17 @@
+// 페이지이동(portfolio, contents)
+$(document).ready(function(){
+  document
+    .querySelector(".button1")
+    .addEventListener("click", (e) => {
+      document.querySelector(".page.p4").scrollIntoView({ behavior: "smooth" });
+    });
+    document
+    .querySelector(".button2")
+    .addEventListener("click", (e) => {
+      document.querySelector(".page.p3").scrollIntoView({ behavior: "smooth" });
+    });
+});
+
 $(document).ready(function () {
   const content0 = document.querySelector(".page.p1");
   const content1 = document.querySelector(".page.p2");
@@ -197,11 +211,4 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function(){
-  const button1 = document.getElementById('.button1');
-  const section1 = document.getElementById('.page.p4');
 
-  button1.addEventListener('click', () => {
-      window.scrollBy({top: section1.getBoundingClientRect().top, behavior: 'smooth'});
-  });
-});
