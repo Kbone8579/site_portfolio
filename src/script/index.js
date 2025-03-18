@@ -235,17 +235,30 @@ $(document).ready(function(){
   });
 });
 
-// 탑버튼
+// 컨트롤러 애니매이션션
 $(document).ready(function(){
+  // contents-navigation 보임/숨김김
   $(".contents-navigation").hide();
   $(window).scroll(function(){
     if($(this).scrollTop() > 500){$(".contents-navigation").fadeIn();}
     else{$(".contents-navigation").fadeOut();}
   });
 
+  // 탑버튼 이동동
   $('.top-btn').click(function(){
     $('html, body').animate({scrollTop : 0}, 800);
       return false;
+  });
+
+  // remote-control 아이콘 변화화
+  $(".remote-control").click(function () {
+    const $this = $(this);
+  
+    if ($this.hasClass("active")) {
+      $this.removeClass("active");
+    } else {
+      $this.addClass("active");
+    }
   });
 });
 
