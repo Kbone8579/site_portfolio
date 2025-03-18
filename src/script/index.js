@@ -145,6 +145,7 @@ $(document).ready(function () {
   }
 });
 
+// 부드러운 스크롤 애니매이션션
 $(document).ready(function(){
   class Scrooth {
     constructor({element = window, strength=10, acceleration = 1.2,deceleration = 0.975}={}) {
@@ -193,5 +194,14 @@ $(document).ready(function(){
     strength: 24,
     acceleration: 1.8,
     deceleration: 0.945,
+  });
+});
+
+$(document).ready(function(){
+  const button1 = document.getElementById('.button1');
+  const section1 = document.getElementById('.page.p4');
+
+  button1.addEventListener('click', () => {
+      window.scrollBy({top: section1.getBoundingClientRect().top, behavior: 'smooth'});
   });
 });
