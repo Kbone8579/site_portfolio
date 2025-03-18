@@ -2331,15 +2331,20 @@ span {
   opacity: 60%;
   border-radius: 100%;
   position: relative;
+  transition: all 0.3s;
 }
 #portfolio .remote-control > div {
   position: absolute;
-  left: 29%;
-  width: 27px;
-  height: 5%;
+  left: 31%;
+  width: 26px;
+  height: 6%;
   background-color: #EEEAE9;
   opacity: 80%;
   transition: opacity 0.3s, transform 0.3s, top 0.3s;
+  border-radius: 100px;
+}
+#portfolio .remote-control:hover {
+  opacity: 100%;
 }
 #portfolio .remote-control > div:nth-child(1) {
   top: 50%;
@@ -2352,12 +2357,12 @@ span {
 #portfolio .remote-control.active > div:nth-child(1) {
   top: 46%;
   transform: translateY(-50%);
-  transform: rotate(-180deg);
+  transform: rotate(90deg);
 }
 #portfolio .remote-control.active > div:nth-child(2) {
   top: 46%;
   transform: translateY(-50%);
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 #portfolio .top-btn {
   width: 68px;
@@ -2365,6 +2370,16 @@ span {
   background-color: #AE8970;
   opacity: 60%;
   border-radius: 100%;
+  transition: all 0.3s;
+  position: relative;
+}
+#portfolio .top-btn:hover {
+  opacity: 100%;
+}
+#portfolio .top-btn i {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @property --tw-translate-x {
   syntax: "*";
