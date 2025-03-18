@@ -211,6 +211,32 @@ span {
   margin-top: 7px;
   opacity: 70%;
 }
+/* contents-navigation*/
+#portfolio .controller .box span:nth-child(1) {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #EEEAE9;
+  opacity: 80%;
+  letter-spacing: 0.01em;
+  transition: all 0.2s;
+}
+#portfolio .controller .box span:nth-child(2) {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #EEEAE9;
+  opacity: 100%;
+  letter-spacing: -0.04em;
+  transition: all 0.2s;
+}
+#portfolio .controller .box:hover span:nth-child(1) {
+  opacity: 100%;
+}
+#portfolio .controller .box:hover span:nth-child(2) {
+  opacity: 100%;
+  font-weight: 600;
+}
 /* css */
 .path {
   fill: none;
@@ -484,8 +510,7 @@ span {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #A5A5A5;
-  opacity: 40%;
+  background-color: rgba(0, 0, 0, 0.365);
   border-radius: 30px 0 0 30px;
 }
 #portfolio .controller .box {
@@ -493,6 +518,7 @@ span {
   flex-direction: column;
   align-items: center;
   gap: 7px;
+  z-index: 10;
 }
 #portfolio .controller .box span:nth-child(1) {
   width: 42px;
@@ -502,7 +528,9 @@ span {
   align-items: center;
   justify-content: center;
   background-color: #D9C7A9;
-  border-radius: 50%;
+  opacity: 50%;
+  border-radius: 100%;
+  
 }
 #portfolio .remote-control {
   width: 68px;
