@@ -250,7 +250,7 @@ $(document).ready(function(){
       return false;
   });
 
-  // remote-control 아이콘 변화화
+  // remote-control 아이콘 변화
   $(".remote-control").click(function () {
     const $this = $(this);
   
@@ -262,7 +262,7 @@ $(document).ready(function(){
   });
 });
 
-// remote-control 스크립트트
+// remote-control 스크립트
 // JavaScript for animating the controller
 document.addEventListener('DOMContentLoaded', function() {
   const remoteControl = document.querySelector('.remote-control');
