@@ -2020,7 +2020,7 @@ span {
   font-family: "Pretendard Variable", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  color: #EEEAE9;
+  color: #eeeae9;
   opacity: 80%;
   letter-spacing: 0.01em;
   transition: all 0.2s;
@@ -2029,7 +2029,7 @@ span {
   font-family: "Pretendard Variable", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  color: #EEEAE9;
+  color: #eeeae9;
   opacity: 100%;
   letter-spacing: -0.04em;
   transition: all 0.2s;
@@ -2048,7 +2048,7 @@ span {
 #portfolio .page.p1 {
   box-sizing: border-box;
   overflow: hidden;
-  background-color: #F0EFEA;
+  background-color: #f0efea;
 }
 #portfolio .path1 {
   stroke-dasharray: 1;
@@ -2137,7 +2137,7 @@ span {
   gap: 49px;
 }
 #portfolio .page.p3 {
-  background-color: #F0EFEA;
+  background-color: #f0efea;
   position: relative;
 }
 #portfolio .page.p3 > .all-box {
@@ -2268,6 +2268,16 @@ span {
 #portfolio .page.p4 .all-box .contents-box .content.s2 .img-box {
   background-image: url(image/content-djcidc.jpg);
 }
+#portfolio .page.p4 .all-box .contents-box .content a {
+  display: flex;
+}
+#portfolio .page.p4 .all-box .contents-box .content a:hover .text-box .detail .site-btn {
+  background-color: #d9c7a9;
+  color: white;
+}
+#portfolio .page.p4 .all-box .contents-box .content a:hover .text-box .detail .site-btn i {
+  color: white;
+}
 #portfolio .page.p4 .all-box .contents-box .content .img-box {
   width: 237px;
   height: 237px;
@@ -2283,6 +2293,26 @@ span {
   flex-direction: column;
   justify-content: space-between;
   width: 435px;
+}
+#portfolio .page.p4 .all-box .contents-box .content .text-box .detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#portfolio .page.p4 .all-box .contents-box .content .text-box .detail .site-btn {
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0px 1px 35px 0px #00000011;
+  position: relative;
+  transition: all 0.2s;
+}
+#portfolio .page.p4 .all-box .contents-box .content .text-box .detail .site-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #portfolio .contents-navigation {
   width: 96px;
@@ -2303,7 +2333,7 @@ span {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: rgba(0, 0, 0, 0.365);
+  background-color: rgba(132, 92, 66, 0.61);
   border-radius: 30px 0 0 30px;
 }
 #portfolio .controller .box {
@@ -2320,14 +2350,14 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #D9C7A9;
+  background-color: #d9c7a9;
   opacity: 50%;
   border-radius: 100%;
 }
 #portfolio .remote-control {
   width: 68px;
   height: 68px;
-  background-color: #AE8970;
+  background-color: #ae8970;
   opacity: 60%;
   border-radius: 100%;
   position: relative;
@@ -2338,7 +2368,7 @@ span {
   left: 31%;
   width: 26px;
   height: 6%;
-  background-color: #EEEAE9;
+  background-color: #eeeae9;
   opacity: 80%;
   transition: opacity 0.3s, transform 0.3s, top 0.3s;
   border-radius: 100px;
@@ -2367,7 +2397,7 @@ span {
 #portfolio .top-btn {
   width: 68px;
   height: 68px;
-  background-color: #AE8970;
+  background-color: #ae8970;
   opacity: 60%;
   border-radius: 100%;
   transition: all 0.3s;
