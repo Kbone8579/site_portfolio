@@ -258,6 +258,7 @@ p1 {
   box-sizing: border-box;
   overflow: hidden;
   background-color: #f0efea;
+  position: relative;
 }
 #portfolio .path1 {
   stroke-dasharray: 1;
@@ -313,7 +314,18 @@ p1 {
   flex-direction: column;
   align-items: end;
 }
-
+#portfolio .page.p1 .all-box .cloud-img.i1 {
+  position: absolute;
+  top: 40px;
+  left: -43px;
+  animation: floating 4.2s linear infinite;
+}
+#portfolio .page.p1 .all-box .cloud-img.i2 {
+  position: absolute;
+  top: 200px;
+  left: 1200px;
+  animation: floating 2.2s linear infinite;
+}
 /* page p2 */
 #portfolio .page.p2 {
   background-image: url(image/img-1.jpg);

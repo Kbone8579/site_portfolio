@@ -442,9 +442,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -1807,20 +1804,6 @@
   .transform-view {
     transform-box: view-box;
   }
-  .group-hover\:text-\[\#fff\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: #fff;
-      }
-    }
-  }
-  .hover\:text-\[\#fff\] {
-    &:hover {
-      @media (hover: hover) {
-        color: #fff;
-      }
-    }
-  }
 }
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
@@ -2066,6 +2049,7 @@ span {
   box-sizing: border-box;
   overflow: hidden;
   background-color: #f0efea;
+  position: relative;
 }
 #portfolio .path1 {
   stroke-dasharray: 1;
@@ -2118,6 +2102,18 @@ span {
   display: flex;
   flex-direction: column;
   align-items: end;
+}
+#portfolio .page.p1 .all-box .cloud-img.i1 {
+  position: absolute;
+  top: 40px;
+  left: -43px;
+  animation: floating 4.2s linear infinite;
+}
+#portfolio .page.p1 .all-box .cloud-img.i2 {
+  position: absolute;
+  top: 300px;
+  left: 1000px;
+  animation: floating 4.2s linear infinite;
 }
 #portfolio .page.p2 {
   background-image: url(image/img-1.jpg);
