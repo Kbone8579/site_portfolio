@@ -2105,14 +2105,14 @@ span {
 }
 #portfolio .page.p1 .all-box .cloud-img.i1 {
   position: absolute;
-  top: 40px;
-  left: -43px;
+  top: 130px;
+  left: 250px;
   animation: floating 4.2s linear infinite;
 }
 #portfolio .page.p1 .all-box .cloud-img.i2 {
   position: absolute;
-  top: 300px;
-  left: 1100px;
+  top: 750px;
+  left: 1500px;
   animation: floating 3.2s linear infinite;
 }
 #portfolio .page.p2 {
