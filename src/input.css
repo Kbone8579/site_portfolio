@@ -322,9 +322,9 @@ p1 {
 }
 #portfolio .page.p1 .all-box .cloud-img.i2 {
   position: absolute;
-  top: 200px;
-  left: 1200px;
-  animation: floating 2.2s linear infinite;
+  top: 300px;
+  left: 1100px;
+  animation: floating 3.2s linear infinite;
 }
 /* page p2 */
 #portfolio .page.p2 {
