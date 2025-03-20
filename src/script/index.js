@@ -1,6 +1,6 @@
 // 페이지이동(portfolio, contents)
 $(document).ready(function(){
-    // 탑바 버튼튼
+    // 탑바 버튼
     document
     .querySelector(".button1")
     .addEventListener("click", (e) => {
