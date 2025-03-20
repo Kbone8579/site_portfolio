@@ -442,6 +442,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -1804,6 +1807,20 @@
   .transform-view {
     transform-box: view-box;
   }
+  .group-hover\:text-\[\#fff\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: #fff;
+      }
+    }
+  }
+  .hover\:text-\[\#fff\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #fff;
+      }
+    }
+  }
 }
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
@@ -2271,8 +2288,12 @@ span {
 #portfolio .page.p4 .all-box .contents-box .content a {
   display: flex;
 }
-#portfolio .page.p4 .all-box .contents-box .content a:hover .text-box .detail .site-btn {
+#portfolio .page.p4 .all-box .contents-box .content.s1 a:hover .text-box .detail .site-btn {
   background-color: #d9c7a9;
+  color: white;
+}
+#portfolio .page.p4 .all-box .contents-box .content.s2 a:hover .text-box .detail .site-btn {
+  background-color: #00b8cc90;
   color: white;
 }
 #portfolio .page.p4 .all-box .contents-box .content a:hover .text-box .detail .site-btn i {

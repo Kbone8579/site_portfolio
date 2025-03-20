@@ -499,12 +499,24 @@ p1 {
   .page.p4
   .all-box
   .contents-box
-  .content
+  .content.s1
   a:hover
   .text-box
   .detail
   .site-btn {
   background-color: #d9c7a9;
+  color: white;
+}
+#portfolio
+  .page.p4
+  .all-box
+  .contents-box
+  .content.s2
+  a:hover
+  .text-box
+  .detail
+  .site-btn {
+  background-color: #00b8cc90;
   color: white;
 }
 #portfolio
