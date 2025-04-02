@@ -504,6 +504,9 @@ p1 {
 #portfolio .page.p4 .all-box .contents-box .content.s2 .img-box {
   background-image: url(image/content-djcidc.jpg);
 }
+#portfolio .page.p4 .all-box .contents-box .content.s3 .img-box {
+  background-image: url(image/content-ikea.jpg);
+}
 #portfolio .page.p4 .all-box .contents-box .content a {
   display: flex;
 }
@@ -529,6 +532,18 @@ p1 {
   .detail
   .site-btn {
   background-color: #00b8cc90;
+  color: white;
+}
+#portfolio
+  .page.p4
+  .all-box
+  .contents-box
+  .content.s3
+  a:hover
+  .text-box
+  .detail
+  .site-btn {
+  background-color: #FDCD01;
   color: white;
 }
 #portfolio

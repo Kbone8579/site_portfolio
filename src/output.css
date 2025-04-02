@@ -442,6 +442,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -1505,9 +1508,6 @@
   .scheme-only-light {
     color-scheme: only light;
   }
-  .opacity-0 {
-    opacity: 0%;
-  }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
   }
@@ -2281,6 +2281,9 @@ span {
 #portfolio .page.p4 .all-box .contents-box .content.s2 .img-box {
   background-image: url(image/content-djcidc.jpg);
 }
+#portfolio .page.p4 .all-box .contents-box .content.s3 .img-box {
+  background-image: url(image/content-ikea.jpg);
+}
 #portfolio .page.p4 .all-box .contents-box .content a {
   display: flex;
 }
@@ -2290,6 +2293,10 @@ span {
 }
 #portfolio .page.p4 .all-box .contents-box .content.s2 a:hover .text-box .detail .site-btn {
   background-color: #00b8cc90;
+  color: white;
+}
+#portfolio .page.p4 .all-box .contents-box .content.s3 a:hover .text-box .detail .site-btn {
+  background-color: #FDCD01;
   color: white;
 }
 #portfolio .page.p4 .all-box .contents-box .content a:hover .text-box .detail .site-btn i {
