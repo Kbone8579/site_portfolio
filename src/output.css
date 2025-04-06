@@ -430,6 +430,9 @@
   .h-9 {
     height: calc(var(--spacing) * 9);
   }
+  .h-\[1057px\] {
+    height: 1057px;
+  }
   .h-screen {
     height: 100vh;
   }
@@ -1240,6 +1243,12 @@
   }
   .p-9 {
     padding: calc(var(--spacing) * 9);
+  }
+  .pl-\[50px\] {
+    padding-left: 50px;
+  }
+  .pl-\[120px\] {
+    padding-left: 120px;
   }
   .text-center {
     text-align: center;
@@ -2281,6 +2290,9 @@ span {
 #portfolio .page.p4 .all-box .contents-box .content.s3 .img-box {
   background-image: url(image/content-ikea.jpg);
 }
+#portfolio .page.p4 .all-box .contents-box .content.s4 .img-box {
+  background-image: url(image/content-ReBorn.jpg);
+}
 #portfolio .page.p4 .all-box .contents-box .content a {
   display: flex;
 }
@@ -2294,6 +2306,10 @@ span {
 }
 #portfolio .page.p4 .all-box .contents-box .content.s3 a:hover .text-box .detail .site-btn {
   background-color: #FDCD01;
+  color: white;
+}
+#portfolio .page.p4 .all-box .contents-box .content.s4 a:hover .text-box .detail .site-btn {
+  background-color: #4682A9;
   color: white;
 }
 #portfolio .page.p4 .all-box .contents-box .content a:hover .text-box .detail .site-btn i {
